@@ -1,0 +1,2 @@
+﻿  make: *** No rule to make target 'ex01.c', needed by 'ex01'.  Stop.
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.MakeFile.Targets(37,5): error MSB3073: The command "make all" exited with code 2.

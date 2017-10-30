@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+	<title>CAB202 Frame Diff Utility</title>
+	<script src="ssloader.js"></script>
+	<script src="ss.js"></script>
+	<script src="SystemQut_Client.js"></script>
+	<script src="CAB202MoviePlayer.js"></script>
+</head>
+<body>
+	<h1 style="text-align: center;">CAB202 Movie Player</h1>
+	<div id="moviePlayer" style="text-align: center;">
+		<div id="displayArea">
+			<div id="screenHolder">
+				<p id="movieTitle">Untitled</p>
+				<div>
+					<textarea id="screen" readonly="readonly" style="overflow: hidden"
+						rows="24" cols="80"></textarea>
+				</div>
+				<p id="keyDisplay">&nbsp;</p>
+				<div>
+					<span id="currentTimeLabel" style="width: 1in;">0.00</span>s
+				<input type="range" id="slider" min="0" max="100" value="0" step="0.1" style="width: 60%;" />
+					<span id="maxTimeLabel" style="width: 1in;">0.00</span>s
+				</div>
+		</div>
+		</div>
+       <div class="FileTab">
+		   Open movie:
+		   <input type="file" id="fileControl" />
+	   </div>
+		<div>
+			<button id="playButton" style="margin-left: 0.5in; width: 1.25in;">Play</button>
+		</div>
+	</div>
+</body>
+</html>

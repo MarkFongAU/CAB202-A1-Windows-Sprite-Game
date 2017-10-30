@@ -1,0 +1,34 @@
+﻿  gcc -std=gnu99 -D_XOPEN_SOURCE=500  array_ex_01.c -o array_ex_01 -I../ZDK -L../ZDK -lzdk -lncurses -lm 
+  array_ex_01.c: In function 'main':
+  array_ex_01.c:35:2: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+    printf( "mean = %f\n", sum / n );
+    ^
+  array_ex_01.c:35:2: warning: incompatible implicit declaration of built-in function 'printf'
+  array_ex_01.c:35:2: note: include '<stdio.h>' or provide a declaration of 'printf'
+  array_ex_01.c:36:25: warning: implicit declaration of function 'sqrt' [-Wimplicit-function-declaration]
+    printf( "std  = %f\n", sqrt( sum_sq - sum ) / n );
+                           ^
+  array_ex_01.c:36:25: warning: incompatible implicit declaration of built-in function 'sqrt'
+  array_ex_01.c:36:25: note: include '<math.h>' or provide a declaration of 'sqrt'
+  array_ex_01.c: In function 'read_array':
+  array_ex_01.c:47:3: warning: incompatible implicit declaration of built-in function 'printf'
+     printf( "Please enter a numeric value (negative to exit): " );
+     ^
+  array_ex_01.c:47:3: note: include '<stdio.h>' or provide a declaration of 'printf'
+  array_ex_01.c:50:24: warning: implicit declaration of function 'scanf' [-Wimplicit-function-declaration]
+     int values_scanned = scanf( "%lf", &t );
+                          ^
+  array_ex_01.c:50:24: warning: incompatible implicit declaration of built-in function 'scanf'
+  array_ex_01.c:50:24: note: include '<stdio.h>' or provide a declaration of 'scanf'
+  array_ex_01.c: In function 'array_min':
+  array_ex_01.c:87:15: error: 'HUGE_VAL' undeclared (first use in this function)
+    double min = HUGE_VAL;
+                 ^
+  array_ex_01.c:87:15: note: each undeclared identifier is reported only once for each function it appears in
+  array_ex_01.c: In function 'array_max':
+  array_ex_01.c:103:17: error: 'HUGE_VAL' undeclared (first use in this function)
+    double max = - HUGE_VAL;
+                   ^
+  make: *** [array_ex_01] Error 1
+  Makefile:18: recipe for target 'array_ex_01' failed
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.MakeFile.Targets(38,5): error MSB3073: The command "make all" exited with code 2.
